@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인테리어 및 시공 가이드 - 우리의 첫 집</title>
+    <style>
+        body {
+            background-color: #F9F7F3;
+            color: #333333;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            font-size: 16px;
+            margin: 0;
+        }
+        header {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 25px;
+            text-decoration: none;
+            color: #888;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            color: #FF7F50;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #FFFFFF;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #FF7F50;
+            border-bottom: 2px solid #F0F0F0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #E0E0E0;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #FFF3F0;
+            color: #D85A30;
+            font-weight: bold;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .checklist-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            accent-color: #FF7F50;
+            cursor: pointer;
+        }
+        .checklist-item label {
+            cursor: pointer;
+            line-height: 1.4;
+        }
+        .step-label {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        .info-box {
+            background-color: #F0F8FF;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #0066CC;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← 메인으로</a>
+        <h1>🛠️ 인테리어 및 시공 가이드</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. 시공 방식 비교: 턴키 vs 반셀프</h2>
+            <p>우리 부부의 예산과 시간 여유에 맞춰 시공 방식을 결정해 보세요.</p>
+            <table>
+                <tr>
+                    <th>구분</th>
+                    <th>턴키 (종합 인테리어)</th>
+                    <th>반셀프 (공정별 개별 계약)</th>
+                </tr>
+                <tr>
+                    <td><b>장점</b></td>
+                    <td>알아서 다 해줌 (시간 절약), A/S 편리</td>
+                    <td>비용을 크게 절감할 수 있음, 원하는 대로 세부 조정 가능</td>
+                </tr>
+                <tr>
+                    <td><b>단점</b></td>
+                    <td>비용이 상대적으로 비쌈</td>
+                    <td>매일 현장에 나가야 함, 공정 간 꼬임 발생 시 직접 해결해야 함</td>
+                </tr>
+                <tr>
+                    <td><b>추천 대상</b></td>
+                    <td>맞벌이로 바쁜 부부, 예산이 넉넉한 분</td>
+                    <td>시간 여유가 있고, 꼼꼼하며 예산을 아끼고 싶은 분</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>2. 기본 공정 순서 체크리스트</h2>
+            <p>인테리어는 순서가 생명입니다. 진행 상황을 체크해 보세요.</p>
+            <div class="checklist-item"><input type="checkbox" id="s1"><label for="s1"><span class="step-label">Step 1</span> 철거 및 폐기물 처리 (소음 신고 필수)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="s2"><label for="s2"><span class="step-label">Step 2</span> 설비 및 샷시(창호) 교체 (가장 큰 비용 발생 구간)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="s3"><label for="s3"><span class="step-label">Step 3</span> 목공 작업 (몰딩, 걸레받이, 문틀 등 뼈대 작업)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="s4"><label for="s4"><span class="step-label">Step 4</span> 타일 및 욕실 세팅 (화장실, 주방 벽, 현관 타일)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="s5"><label for="s5"><span class="step-label">Step 5</span> 필름 및 도장(페인트) 작업</label></div>
+            <div class="checklist-item"><input type="checkbox" id="s6"><label for="s6"><span class="step-label">Step 6</span> 도배 및 장판/마루 시공</label></div>
+            <div class="checklist-item"><input type="checkbox" id="s7"><label for="s7"><span class="step-label">Step 7</span> 가구(싱크대, 붙박이장) 및 조명 설치</label></div>
+            <div class="info-box">💡 <b>인테리어 팁:</b> 엘리베이터 보양 및 입주민 동의서 서명은 보통 공사 시작 1~2주일 전에 미리 완료해야 합니다. 관리사무소의 규정을 꼭 확인하세요!</div>
+        </section>
+    </main>
+</body>
+</html>
