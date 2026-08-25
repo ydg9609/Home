@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가전 및 가구 리스트 - 우리의 첫 집</title>
+    <style>
+        body {
+            background-color: #F9F7F3;
+            color: #333333;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            font-size: 16px;
+            margin: 0;
+        }
+        header {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 25px;
+            text-decoration: none;
+            color: #888;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            color: #FF7F50;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #FFFFFF;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #FF7F50;
+            border-bottom: 2px solid #F0F0F0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #555;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .flex-box {
+            flex: 1;
+            background-color: #FAFAFA;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #EAEAEA;
+            min-width: 250px;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .checklist-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            accent-color: #FF7F50;
+            cursor: pointer;
+        }
+        .checklist-item label {
+            cursor: pointer;
+            line-height: 1.4;
+        }
+        .info-box {
+            background-color: #F0FFF4; 
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #2F855A;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← 메인으로</a>
+        <h1>🛋️ 가전 및 가구 리스트</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. 가전 졸업 체크리스트</h2>
+            <p>다품목 할인을 위해 꼭 필요한 가전과 선택 가전을 구분해 보세요.</p>
+            <div class="flex-container">
+                <div class="flex-box">
+                    <h3>✅ 필수 가전</h3>
+                    <div class="checklist-item"><input type="checkbox" id="a1"><label for="a1">냉장고</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="a2"><label for="a2">세탁기 & 건조기 (워시타워 등)</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="a3"><label for="a3">에어컨 (2in1 등)</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="a4"><label for="a4">무선 청소기</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="a5"><label for="a5">TV 또는 빔프로젝터</label></div>
+                </div>
+                <div class="flex-box">
+                    <h3>💡 선택 가전 (삶의 질 상승템)</h3>
+                    <div class="checklist-item"><input type="checkbox" id="o1"><label for="o1">식기세척기</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="o2"><label for="o2">로봇청소기 (이모님)</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="o3"><label for="o3">의류 관리기 (스타일러/에어드레서)</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="o4"><label for="o4">음식물 처리기</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="o5"><label for="o5">공기청정기 & 제습기</label></div>
+                </div>
+            </div>
+            <div class="info-box">💡 <b>가전 졸업 팁:</b> 가전은 이른바 '오픈점(새로 오픈한 매장)'이 혜택이 가장 좋습니다. 2~3군데의 백화점, 대형 마트, 대리점 오픈점을 돌아다니며 견적을 비교해 보는 것을 추천합니다.</div>
+        </section>
+
+        <section>
+            <h2>2. 공간별 주요 가구</h2>
+            <p>미리 집의 평면도(도면)를 보고 사이즈를 측정한 뒤에 구매하러 가세요.</p>
+            <div class="flex-container">
+                <div class="flex-box">
+                    <h3>🛋️ 거실 & 주방</h3>
+                    <div class="checklist-item"><input type="checkbox" id="f1"><label for="f1">소파 (3~4인용 등)</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="f2"><label for="f2">거실장 또는 TV 스탠드</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="f3"><label for="f3">식탁 (4~6인용) 및 의자</label></div>
+                </div>
+                <div class="flex-box">
+                    <h3>🛏️ 안방 (침실)</h3>
+                    <div class="checklist-item"><input type="checkbox" id="f4"><label for="f4">침대 프레임 (K, LK 사이즈 등)</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="f5"><label for="f5">매트리스 (꼭 누워보고 결정!)</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="f6"><label for="f6">화장대 및 협탁</label></div>
+                </div>
+                <div class="flex-box">
+                    <h3>👔 드레스룸 & 서재</h3>
+                    <div class="checklist-item"><input type="checkbox" id="f7"><label for="f7">시스템장 또는 붙박이장</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="f8"><label for="f8">책상 및 작업용 의자</label></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
