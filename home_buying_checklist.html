@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집 구매 및 계약 체크리스트 - 우리의 첫 집</title>
+    <style>
+        body {
+            background-color: #F9F7F3;
+            color: #333333;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            font-size: 16px;
+            margin: 0;
+        }
+        header {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 25px;
+            text-decoration: none;
+            color: #888;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-btn:hover {
+            color: #FF7F50;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #FFFFFF;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #FF7F50;
+            border-bottom: 2px solid #F0F0F0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .checklist-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            accent-color: #FF7F50;
+            cursor: pointer;
+        }
+        .checklist-item label {
+            cursor: pointer;
+            line-height: 1.4;
+        }
+        .info-box {
+            background-color: #FFF3F0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #D85A30;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+        button.print-btn {
+            background-color: #FF7F50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(255, 127, 80, 0.3);
+        }
+        button.print-btn:hover {
+            background-color: #E06B40;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">← 메인으로</a>
+        <h1>🏠 집 구매 및 계약 체크리스트</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. 예산 수립 및 대출 계획</h2>
+            <div class="checklist-item"><input type="checkbox" id="b1"><label for="b1">우리의 가용 예산(현재 가진 현금) 정확히 계산하기</label></div>
+            <div class="checklist-item"><input type="checkbox" id="b2"><label for="b2">신생아 특례 대출 / 디딤돌 대출 자격 요건 및 금리 확인하기</label></div>
+            <div class="checklist-item"><input type="checkbox" id="b3"><label for="b3">DSR / LTV 한도 미리 알아보기 (은행 방문 상담)</label></div>
+            <div class="info-box">💡 <b>예산 팁:</b> 주택 가격 외에도 취등록세, 중개수수료, 이사 비용, 인테리어 비용 등 부대비용(약 2~3천만 원)을 예산에 꼭 포함해야 당황하지 않습니다.</div>
+        </section>
+
+        <section>
+            <h2>2. 임장 (집 보러 갈 때) 필수 체크</h2>
+            <div class="checklist-item"><input type="checkbox" id="v1"><label for="v1">채광 방향 (남향, 동향 등) 및 낮 시간대 일조량 확인</label></div>
+            <div class="checklist-item"><input type="checkbox" id="v2"><label for="v2">수압 및 배수 체크 (주방, 화장실 물 동시에 틀어보고 변기 내려보기)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="v3"><label for="v3">결로 및 누수 흔적 (베란다 구석, 창틀 주변, 벽지 곰팡이 확인)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="v4"><label for="v4">주차장 공간 (이중 주차가 많은지, 퇴근 시간대 주차 난이도 확인)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="v5"><label for="v5">주변 인프라 (지하철/버스정류장 도보 시간, 마트, 병원 등)</label></div>
+        </section>
+
+        <section>
+            <h2>3. 안전한 계약 진행</h2>
+            <div class="checklist-item"><input type="checkbox" id="c1"><label for="c1">등기부등본 확인 (근저당, 가압류 등 위험 요소 당일 발급분으로 체크)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="c2"><label for="c2">집주인 신분증 진위 여부 확인 및 반드시 '본인 명의' 계좌로 송금</label></div>
+            <div class="checklist-item"><input type="checkbox" id="c3"><label for="c3">특약 사항 꼼꼼히 작성 (예: '전세자금 대출 불가 시 계약금 전액 반환' 등)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="c4"><label for="c4">국토교통부 실거래가 신고 (계약 체결일로부터 30일 이내, 보통 중개사가 진행)</label></div>
+        </section>
+
+        <button class="print-btn" onclick="window.print()">🖨️ 체크리스트 인쇄하기</button>
+    </main>
+</body>
+</html>
